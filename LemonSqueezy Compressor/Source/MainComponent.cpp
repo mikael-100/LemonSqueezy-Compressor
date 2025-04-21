@@ -7,11 +7,13 @@ MainComponent::MainComponent()
     backgroundImage = juce::ImageCache::getFromMemory(BinaryData::BG_png, BinaryData::BG_pngSize);
     setSize(615.25, 332);
 
-    juce::Image original = juce::ImageCache::getFromMemory(BinaryData::BL1_png, BinaryData::BL1_pngSize);
-    juce::Image scaled = original.rescaled(130, 130); // 👈 Skala PNG:n
-    knobLookAndFeel = std::make_unique<KnobLookAndFeel>(scaled);
+    // Large Knob 1
+    juce::Image largeKnob1 = juce::ImageCache::getFromMemory(BinaryData::BL1_png, BinaryData::BL1_pngSize);
+    juce::Image bl1 = largeKnob1.rescaled(130, 130); // 👈 Skala PNG:n
 
-    slider.setLookAndFeel(knobLookAndFeel.get());
+
+    knobLarge1 = std::make_unique<KnobLookAndFeel>(bl1);
+    slider.setLookAndFeel(knobLarge1.get());
     slider.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
     slider.setTextBoxStyle(juce::Slider::NoTextBox, true, 50, 20);
     slider.setRotaryParameters(
@@ -22,6 +24,21 @@ MainComponent::MainComponent()
 
     addAndMakeVisible(slider);
 
+    // Large Knob 2
+
+    juce::Image largeKnob2 = juce::ImageCache::getFromMemory(BinaryData::BL2_png, BinaryData::BL2_pngSize);
+    juce::Image bl2 = largeKnob2.rescaled(130, 130);
+
+    knobLarge2 = std::make_unique<KnobLookAndFeel>(bl2);
+    slider2.setLookAndFeel(knobLarge2.get());
+    slider2.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
+    slider2.setTextBoxStyle(juce::Slider::NoTextBox, true, 50, 20);
+    slider2.setRotaryParameters(
+        juce::MathConstants<float>::pi * -0.0f,
+        juce::MathConstants<float>::pi * -1.0f,
+        true
+    );
+    addAndMakeVisible(slider2);
     
 }
 
@@ -49,4 +66,6 @@ void MainComponent::resized()
     // If you add any child components, this is where you should
     // update their positions.
     slider.setBounds(80, 95, 130, 130); // Anpassa efter ditt GUI
+    slider2.setBounds(255, 95, 130, 130);
+
 }

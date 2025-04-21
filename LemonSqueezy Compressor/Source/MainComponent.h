@@ -23,7 +23,9 @@ private:
     //==============================================================================
     // Your private member variables go here...
     juce::Slider slider;
-    std::unique_ptr<KnobLookAndFeel> knobLookAndFeel;
+    juce::Slider slider2;
+    std::unique_ptr<KnobLookAndFeel> knobLarge1;
+    std::unique_ptr<KnobLookAndFeel> knobLarge2;
     juce::Image backgroundImage;
 
 
