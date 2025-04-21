@@ -1,0 +1,32 @@
+# JUCE-biblioteket (om du inte vill ha det i repo)
+Juce/
+
+# Builds och binära filer
+Builds/
+build/
+*.exe
+*.dll
+*.app
+*.vst3
+*.pdb
+*.ilk
+*.obj
+*.res
+*.tlog
+*.ipch
+*.suo
+*.VC.db
+*.log
+
+# Visual Studio-specifikt
+.vs/
+*.vcxproj.user
+*.vcxproj.FileListAbsolute.txt
+*.lastbuildstate
+
+# Projucer-autogenererat
+JuceLibraryCode/
+
+# OS-filer
+.DS_Store
+Thumbs.db
