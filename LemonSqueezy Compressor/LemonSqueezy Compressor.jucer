@@ -9,15 +9,15 @@
       <FILE id="LwpIxR" name="KnobLookAndFeel.h" compile="0" resource="0"
             file="Source/KnobLookAndFeel.h"/>
       <GROUP id="{7052D8BD-B725-8960-3701-653A4F8B132C}" name="Images">
-        <GROUP id="{A7DE18F2-9B97-78EE-CA16-D279F9EE81C8}" name="PNG">
-          <FILE id="XLTaON" name="BG.png" compile="0" resource="1" file="../../PNG/BG.png"/>
-          <FILE id="JNRqnt" name="BL1.png" compile="0" resource="1" file="../../PNG/BL1.png"/>
-          <FILE id="oizWow" name="BL2.png" compile="0" resource="1" file="../../PNG/BL2.png"/>
-          <FILE id="j7IzFO" name="BS1.png" compile="0" resource="1" file="../../PNG/BS1.png"/>
-          <FILE id="zX9Y3N" name="BS2.png" compile="0" resource="1" file="../../PNG/BS2.png"/>
-          <FILE id="OHhUAi" name="C1.png" compile="0" resource="1" file="../../PNG/C1.png"/>
-          <FILE id="VrY1XM" name="C2.png" compile="0" resource="1" file="../../PNG/C2.png"/>
-          <FILE id="c1Brsl" name="C3.png" compile="0" resource="1" file="../../PNG/C3.png"/>
+        <GROUP id="{54DF1236-D056-1346-489D-A1D5B699F77E}" name="PNG">
+          <FILE id="OSCOZk" name="BG.png" compile="0" resource="1" file="../../PNG/BG.png"/>
+          <FILE id="zp74cj" name="BL1.png" compile="0" resource="1" file="../../PNG/BL1.png"/>
+          <FILE id="QzVnuZ" name="BL2.png" compile="0" resource="1" file="../../PNG/BL2.png"/>
+          <FILE id="IoSNOh" name="BS1.png" compile="0" resource="1" file="../../PNG/BS1.png"/>
+          <FILE id="lnBQwj" name="BS2.png" compile="0" resource="1" file="../../PNG/BS2.png"/>
+          <FILE id="LVnrc5" name="C1.png" compile="0" resource="1" file="../../PNG/C1.png"/>
+          <FILE id="CiPLO1" name="C2.png" compile="0" resource="1" file="../../PNG/C2.png"/>
+          <FILE id="GUgPNk" name="C3.png" compile="0" resource="1" file="../../PNG/C3.png"/>
         </GROUP>
       </GROUP>
       <FILE id="clGWQV" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
