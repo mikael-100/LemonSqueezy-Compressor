@@ -92,6 +92,7 @@ MainComponent::MainComponent()
     slider.addListener(this);
     slider2.addListener(this);
 
+    /*
     addAndMakeVisible(loadButton);
     addAndMakeVisible(playButton);
     addAndMakeVisible(stopButton);
@@ -161,6 +162,7 @@ MainComponent::MainComponent()
         transportSource.stop();
         DBG("Stop playing");
     };
+    */
 }
 
 MainComponent::~MainComponent()
@@ -170,8 +172,12 @@ MainComponent::~MainComponent()
     slider3.setLookAndFeel(nullptr);
     slider4.setLookAndFeel(nullptr);
 
+    /*
     shutdownAudio();
+    */
 }
+
+/*
 // Preparing the compressor with the sample rate and how big chunks it will contain 
 // plus the default treshold and ratio settings
 void MainComponent::prepareToPlay(int samplesPerBlockExpected, double sampleRate)
@@ -220,6 +226,7 @@ void MainComponent::releaseResources()
 {
     transportSource.releaseResources();
 }
+*/
 
 void MainComponent::paint(juce::Graphics& g)
 {
@@ -245,10 +252,11 @@ void MainComponent::resized()
     slider3.setBounds(412, 90, 55, 55); 
     slider4.setBounds(412, 180, 55, 55);
 
-
+    /*
     loadButton.setBounds(10, 10, 100, 30);
     playButton.setBounds(120, 10, 100, 30);
     stopButton.setBounds(230, 10, 100, 30);
+    */
 }
 
 void MainComponent::sliderValueChanged(juce::Slider* s)
