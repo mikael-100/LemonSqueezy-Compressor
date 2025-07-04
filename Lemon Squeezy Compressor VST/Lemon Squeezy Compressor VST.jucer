@@ -3,19 +3,30 @@
 <JUCERPROJECT id="unjckQ" name="Lemon Squeezy Compressor VST" projectType="audioplug"
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1"
               pluginName="Lemon Squeezy Compressor" pluginDesc="Compressor"
-              pluginManufacturer="Mike Hakz" pluginCode="LSCM" pluginFormats="buildAU,buildVST3">
+              pluginManufacturer="Maad Mike" pluginCode="LSCM" pluginFormats="buildAU,buildStandalone,buildVST3"
+              defines="JUCE_DISPLAY_SPLASH_SCREEN=1&#10;">
   <MAINGROUP id="XUcmg8" name="Lemon Squeezy Compressor VST">
     <GROUP id="{D07319A2-5DD6-B5F1-41C1-DB049B6A0848}" name="Source">
       <GROUP id="{C637F6F6-EE79-5D8D-C99F-27651F79FFE3}" name="Images">
-        <GROUP id="{88DA8053-6E80-45AC-5B38-52F8D160B6E9}" name="PNG">
-          <FILE id="obPYHO" name="BG.png" compile="0" resource="1" file="../../PNG/BG.png"/>
-          <FILE id="VnHXdS" name="BL1.png" compile="0" resource="1" file="../../PNG/BL1.png"/>
-          <FILE id="ri3roQ" name="BL2.png" compile="0" resource="1" file="../../PNG/BL2.png"/>
-          <FILE id="aw0KZy" name="BS1.png" compile="0" resource="1" file="../../PNG/BS1.png"/>
-          <FILE id="pm9QEn" name="BS2.png" compile="0" resource="1" file="../../PNG/BS2.png"/>
-          <FILE id="tgYgFF" name="C1.png" compile="0" resource="1" file="../../PNG/C1.png"/>
-          <FILE id="EMvs15" name="C2.png" compile="0" resource="1" file="../../PNG/C2.png"/>
-          <FILE id="cZDuPP" name="C3.png" compile="0" resource="1" file="../../PNG/C3.png"/>
+        <GROUP id="{FF9628F0-51E6-D42E-4E67-D626F0F5E034}" name="PNG">
+          <GROUP id="{717EA8B9-36D4-8584-F2EF-FF60FBE20CD0}" name="PNG">
+            <GROUP id="{C9421236-7358-A6F6-AD8D-6073C8F98F2B}" name="PNG"/>
+            <GROUP id="{75B37193-37B1-9731-8733-D96300F4CFE7}" name="PNG"/>
+            <GROUP id="{F4B1425C-8E69-15F6-87A0-7C0630351CDB}" name="PNG"/>
+            <GROUP id="{B7DB7618-5553-1AC7-118B-6AAAE14E298C}" name="PNG"/>
+            <FILE id="oXHsiS" name="BGG.png" compile="0" resource="1" file="../../PNG/BGG.png"/>
+          </GROUP>
+          <FILE id="ojiIoW" name="BG.png" compile="0" resource="1" file="../../PNG/BG.png"/>
+          <FILE id="vtZplQ" name="BL1.png" compile="0" resource="1" file="../../PNG/BL1.png"/>
+          <FILE id="liv7zc" name="BL2.png" compile="0" resource="1" file="../../PNG/BL2.png"/>
+          <FILE id="y6CvsZ" name="BS1.png" compile="0" resource="1" file="../../PNG/BS1.png"/>
+          <FILE id="sPpZV6" name="BS2.png" compile="0" resource="1" file="../../PNG/BS2.png"/>
+          <FILE id="b5YBTf" name="C1.png" compile="0" resource="1" file="../../PNG/C1.png"/>
+          <FILE id="ovAhve" name="C2.png" compile="0" resource="1" file="../../PNG/C2.png"/>
+          <FILE id="t56CS6" name="C3 - kopia.png" compile="0" resource="1" file="../../PNG/C3 - kopia.png"/>
+          <FILE id="Mk1rnV" name="C3.png" compile="0" resource="1" file="../../PNG/C3.png"/>
+          <FILE id="UOsa5S" name="MadeWithJuce.png" compile="0" resource="1"
+                file="../../PNG/MadeWithJuce.png"/>
         </GROUP>
       </GROUP>
       <FILE id="snsyZu" name="KnobLookAndFeel.cpp" compile="1" resource="0"

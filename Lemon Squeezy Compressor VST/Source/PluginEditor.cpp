@@ -8,14 +8,30 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "MyPluginGuiCode.h"
 
 //==============================================================================
-LemonSqueezyCompressorVSTAudioProcessorEditor::LemonSqueezyCompressorVSTAudioProcessorEditor (LemonSqueezyCompressorVSTAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p)
+LemonSqueezyCompressorVSTAudioProcessorEditor::LemonSqueezyCompressorVSTAudioProcessorEditor(LemonSqueezyCompressorVSTAudioProcessor& p)
+    : AudioProcessorEditor(&p), audioProcessor(p)
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    addAndMakeVisible(myGui);
+    setSize(615, 332);
+
+    // slider = threshold (used for both threshold and ratio in processor logic)
+    thresholdAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
+        audioProcessor.parameters, "threshold", myGui.slider);
+
+    // slider2 = outputGain
+    outputGainAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
+        audioProcessor.parameters, "outputGain", myGui.slider2);
+
+    // slider3 = attack
+    attackAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
+        audioProcessor.parameters, "attack", myGui.slider3);
+
+    // slider4 = release
+    releaseAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
+        audioProcessor.parameters, "release", myGui.slider4);
 }
 
 LemonSqueezyCompressorVSTAudioProcessorEditor::~LemonSqueezyCompressorVSTAudioProcessorEditor()
@@ -23,18 +39,12 @@ LemonSqueezyCompressorVSTAudioProcessorEditor::~LemonSqueezyCompressorVSTAudioPr
 }
 
 //==============================================================================
-void LemonSqueezyCompressorVSTAudioProcessorEditor::paint (juce::Graphics& g)
+void LemonSqueezyCompressorVSTAudioProcessorEditor::paint(juce::Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
-
-    g.setColour (juce::Colours::white);
-    g.setFont (juce::FontOptions (15.0f));
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
+    // All visual painting handled in MyPluginGuiCode
 }
 
 void LemonSqueezyCompressorVSTAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+    myGui.setBounds(getLocalBounds());
 }
