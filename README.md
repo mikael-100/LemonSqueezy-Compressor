@@ -8,7 +8,7 @@
 [Download LemonSqueezyCompressor for Windows](https://www.dropbox.com/scl/fi/bz16uaxqq1fhesodvlx1i/LemonSqueezyCompressorInstaller.exe?rlkey=v61qlwnmngnqn2nche8rx17oe&st=hg3nat95&dl=1)
 
 🍏 **macOS (.dmg)**  
-[Download LemonSqueezyCompressor for macOS](https://www.dropbox.com/scl/fi/mctwmbp5nqwfv784tayep/Lemon-Squeezy-Installer.dmg?rlkey=q7ds5oikf0p70kh45fv4vm6jq&st=9yb4yign&dl=1)
+[Download LemonSqueezyCompressor for macOS](https://www.dropbox.com/scl/fi/ge6oqigkja96yrfrpfc2f/Lemon-Squeezy-Installer.dmg?rlkey=y7838w6w1ohpokigrpsyhaml2&st=mhe4h6xe&dl=1)
 
 ## JUCE License
 
